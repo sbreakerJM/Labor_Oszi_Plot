@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # CSV-Datei einlesen
-df = pd.read_csv("RLC_Kreis.csv")
+df = pd.read_csv("Data\RC_Grenzfrequenz.csv")
 
 # Entferne die zweite Zeile mit Einheiten und benenne die Spalten
 df_clean = df.iloc[1:].copy()

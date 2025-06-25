@@ -21,14 +21,14 @@ def load_and_plot_csv_custom(file_path):
 
     # Plot erstellen
     plt.figure(figsize=(10, 5))
-    plt.plot(x_vals, y_vals, label="Messkurve")
+    plt.plot(x_vals, y_vals, label=None)
     plt.xlabel("Zeit (s)")
     plt.ylabel("Spannung (V)")
-    plt.title("Messdaten aus CSV-Datei")
+    plt.title("Funktionsgenerator - Dreieck") # Hier den Titel anpassen
     plt.grid(True)
     plt.legend()
     plt.tight_layout()
     plt.show()
 
 # Beispielaufruf:
-load_and_plot_csv_custom("Data/FGEN_1_Square.csv")
+load_and_plot_csv_custom("Data/ue1/FGEN_4_Dreieck.csv") #Hier den Dateipfad anpassen
